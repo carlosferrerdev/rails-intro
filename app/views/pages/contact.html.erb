@@ -1,0 +1,16 @@
+<h1>Contact Us</h1>
+
+<p>We like receiving emails ✉️</p>
+
+<h2>Who do you want to contact?</h2>
+
+<form action="/contact/" method="get">
+  <label for="member">Please type a name...</label>
+  <input name ="member" name="member" type="text" placeholder="Exemple: Charlie">
+  <input type="submit">
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ol>
